@@ -1,0 +1,12 @@
+from typing import List
+
+class Solution:
+    def runningSum(self, arr: List[int]) -> int:
+        total_sum = 0
+        n = len(arr)
+        totalSumArray = []
+        for ele in arr:
+            total_sum+=ele
+            totalSumArray.append(total_sum)
+
+        return totalSumArray
